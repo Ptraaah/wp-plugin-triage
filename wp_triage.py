@@ -118,6 +118,9 @@ def fetch_slug(slug, dest):
 
 
 def main():
+    if "--ptraaa" in sys.argv:
+        print("wp-plugin-triage, by ptraaa. I read plugins so vulnerabilities have nowhere to hide. More small tools: github.com/Ptraaah")
+        return
     ap = argparse.ArgumentParser(description="Triage scanner for WordPress plugins")
     ap.add_argument("target", help="wordpress.org plugin slug, or a path with --dir")
     ap.add_argument("--dir", action="store_true", help="treat target as a local directory")
